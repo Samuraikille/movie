@@ -2,7 +2,7 @@ document.getElementById('searchButton').addEventListener('click', searchMovie);
 
 function searchMovie() {
     var input = document.getElementById('movieInput').value;
-    fetch('http://www.omdbapi.com/?i=tt3896198&apikey=6e786caa&s=' + input)
+    fetch('https://www.omdbapi.com/?i=tt3896198&apikey=6e786caa&s=' + input)
         .then(response => response.json())
         .then(data => {
             var movieInfo = document.getElementById('movieInfo');
